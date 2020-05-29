@@ -34,8 +34,8 @@ func newConjurClient(manager *Manager) (*conjurapi.Client, error) {
 	config := conjurapi.Config{
 		Account:      manager.ConjurAccount,
 		ApplianceURL: manager.ConjurApplianceUrl,
-		// SSLCertPath:  manager.TLS.CertFile,
-		// SSLCert:      manager.TLS.SSLCertificate,
+		SSLCertPath:  manager.CertFile,
+		SSLCert:      manager.SSLCertificate,
 	}
 
 	if manager.ConjurAuthnTokenFile != "" {
