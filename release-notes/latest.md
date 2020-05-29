@@ -61,3 +61,11 @@ Currently the only API action that can be limited in this way is `ListAllJobs` -
 #### <sub><sup><a name="5639" href="#5639">:link:</a></sup></sub> fix
 
 * Fix a bug that crashes web node when renaming a job with `old_name` equal to `name`. #5639
+
+#### <sub><sup><a name="5620" href="#5620">:link:</a></sup></sub> fix
+
+* @evanchaoli enhanced task step `vars` to support interpolation. #5620
+
+#### <sub><sup><a name="5624" href="#5624">:link:</a></sup></sub> fix
+
+* Fixed a bug where fly would no longer tell you if the team you logged in with was invalid
